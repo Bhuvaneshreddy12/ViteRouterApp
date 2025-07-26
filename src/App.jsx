@@ -9,6 +9,9 @@ import RootLayout from './layout/RootLayout'
 import Contactinfo from './components/Contactinfo'
 import ContactForm from './components/ContactForm'
 import ContactLayout from './layout/ContactLayout'
+import Notfound from './components/Notfound'
+import JobsLayout from './layout/JobsLayout'
+import Jobs from './pages/Jobs'
 
 
 const App = () => {
@@ -23,6 +26,10 @@ const App = () => {
         <Route path='info' element={<Contactinfo/>}/>
         <Route path='form' element={<ContactForm/>}/>
       </Route>
+      <Route path='jobs' element={<JobsLayout/>}>
+        <Route index element={<Jobs/>}/>
+      </Route>
+      <Route path='*' element={<Notfound/>}/>
       </Route>
     )
   )
