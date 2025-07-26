@@ -11,7 +11,7 @@ import ContactForm from './components/ContactForm'
 import ContactLayout from './layout/ContactLayout'
 import Notfound from './components/Notfound'
 import JobsLayout from './layout/JobsLayout'
-import Jobs from './pages/Jobs'
+import Jobs, { jobsLoader } from './pages/Jobs'
 
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
         <Route path='form' element={<ContactForm/>}/>
       </Route>
       <Route path='jobs' element={<JobsLayout/>}>
-        <Route index element={<Jobs/>}/>
+        <Route index element={<Jobs/>} loader={jobsLoader}/>
       </Route>
       <Route path='*' element={<Notfound/>}/>
       </Route>
