@@ -32,7 +32,7 @@ const App = () => {
         </Route>
         <Route path="jobs" element={<JobsLayout />}>
           <Route index element={<Jobs />} loader={jobsLoader} />
-          <Route path=":id" element={<JobDetails />} loader={jobsLoader} />
+          <Route path=":id" element={<JobDetails />} loader={JobDetailsLoader}  errorElement={<p>Failed to load job details.</p>}/>
         </Route>
         <Route path="*" element={<Notfound />} />
       </Route>
