@@ -8,7 +8,7 @@ A simple React application demonstrating routing using **React Router** and **Vi
 - [React Router DOM](https://reactrouter.com/)
 - [Vite](https://vitejs.dev/)
 
-- JSON Server (for mock backend, if used)
+- JSON Server 
 - 
 ## 📄 Available Pages
 
